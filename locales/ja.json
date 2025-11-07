@@ -1,0 +1,32 @@
+{
+  "brand": "Today in Sapporo",
+  "filter": {
+    "today": "今日",
+    "weekend": "今週末",
+    "nextweek": "来週",
+    "all": "すべて",
+    "allCategories": "全カテゴリ"
+  },
+  "category": {
+    "festival": "祭り",
+    "indoor": "屋内",
+    "learn": "学び",
+    "other": "その他"
+  },
+  "common": {
+    "searchPlaceholder": "キーワード（例：beer, museum, market）",
+    "officialSite": "公式サイトを見る",
+    "official": "公式",
+    "free": "無料",
+    "osm": "OSM 表示"
+  },
+  "list": {
+    "empty": "条件に合うイベントが見つかりませんでした。条件を変更してください。"
+  },
+  "legend": {
+    "festival": "祭り",
+    "indoor": "屋内",
+    "learn": "学び",
+    "other": "その他"
+  }
+}
