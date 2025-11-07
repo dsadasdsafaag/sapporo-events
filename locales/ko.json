@@ -1,0 +1,32 @@
+{
+  "brand": "오늘의 삿포로",
+  "filter": {
+    "today": "오늘",
+    "weekend": "이번 주말",
+    "nextweek": "다음 주",
+    "all": "전체",
+    "allCategories": "모든 카테고리"
+  },
+  "category": {
+    "festival": "축제",
+    "indoor": "실내",
+    "learn": "배움",
+    "other": "기타"
+  },
+  "common": {
+    "searchPlaceholder": "키워드 (예: beer, museum, market)",
+    "officialSite": "공식 사이트 열기",
+    "official": "공식",
+    "free": "무료",
+    "osm": "OSM 표기"
+  },
+  "list": {
+    "empty": "조건에 맞는 이벤트가 없습니다. 필터를 변경해 보세요."
+  },
+  "legend": {
+    "festival": "축제",
+    "indoor": "실내",
+    "learn": "배움",
+    "other": "기타"
+  }
+}
