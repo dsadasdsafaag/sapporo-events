@@ -1,0 +1,32 @@
+{
+  "brand": "今日札幌",
+  "filter": {
+    "today": "今天",
+    "weekend": "本週末",
+    "nextweek": "下週",
+    "all": "全部",
+    "allCategories": "所有分類"
+  },
+  "category": {
+    "festival": "祭典",
+    "indoor": "室內",
+    "learn": "學習",
+    "other": "其他"
+  },
+  "common": {
+    "searchPlaceholder": "關鍵字（例：啤酒、博物館、市場）",
+    "officialSite": "前往官方網站",
+    "official": "官方",
+    "free": "免費",
+    "osm": "OSM 版權"
+  },
+  "list": {
+    "empty": "沒有符合條件的活動，請調整篩選條件。"
+  },
+  "legend": {
+    "festival": "祭典",
+    "indoor": "室內",
+    "learn": "學習",
+    "other": "其他"
+  }
+}
