@@ -5,6 +5,7 @@ import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
 import { useEffect } from "react";
+import { t } from "../lib/i18n";
 
 const catColor = {
   festival: "var(--pin-festival)",
@@ -13,7 +14,6 @@ const catColor = {
   other: "var(--pin-other)",
 };
 
-// 円形カスタムマーカー
 function circleIcon(color) {
   const svg = encodeURIComponent(
     `<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'>
@@ -38,14 +38,17 @@ function FlyToSelected({ items, selectedId }) {
   return null;
 }
 
-export default function MapView({ items, selectedId, onSelect }) {
-  // 初期中心：札幌駅
+function displayTitle(it, lang) {
+  const key = `title_${lang.replace("-", "_")}`;
+  return (it[key] || it.title_en || it.title);
+}
+
+export default function MapView({ items, selectedId, onSelect, lang }) {
   const center = [43.0687, 141.3508];
 
   return (
     <MapContainer center={center} zoom={12} style={{ height: "100%", width: "100%" }}>
       <TileLayer
-        // 無料OSMタイル（商用・大量アクセスは自前/有料タイル推奨）
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>'
       />
@@ -58,11 +61,11 @@ export default function MapView({ items, selectedId, onSelect }) {
         >
           <Popup>
             <div style={{ minWidth: 180 }}>
-              <strong>{it.title}</strong><br />
+              <strong>{displayTitle(it, lang)}</strong><br />
               <small>{it.start_date}〜{it.end_date}</small><br />
               <small>{it.venue_name}</small><br />
               {it.url_official ? (
-                <a href={it.url_official} target="_blank" rel="noreferrer">公式</a>
+                <a href={it.url_official} target="_blank" rel="noreferrer">{t("common.official", lang)}</a>
               ) : null}
             </div>
           </Popup>
