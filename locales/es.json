@@ -1,0 +1,32 @@
+{
+  "brand": "Hoy en Sapporo",
+  "filter": {
+    "today": "Hoy",
+    "weekend": "Este fin de semana",
+    "nextweek": "La próxima semana",
+    "all": "Todo",
+    "allCategories": "Todas las categorías"
+  },
+  "category": {
+    "festival": "Festival",
+    "indoor": "Interior",
+    "learn": "Aprendizaje",
+    "other": "Otros"
+  },
+  "common": {
+    "searchPlaceholder": "Palabra clave (p. ej., beer, museum, market)",
+    "officialSite": "Abrir sitio oficial",
+    "official": "Oficial",
+    "free": "Gratis",
+    "osm": "Atribución OSM"
+  },
+  "list": {
+    "empty": "No hay eventos que coincidan. Prueba cambiando los filtros."
+  },
+  "legend": {
+    "festival": "Festival",
+    "indoor": "Interior",
+    "learn": "Aprendizaje",
+    "other": "Otros"
+  }
+}
